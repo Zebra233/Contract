@@ -5,4 +5,4 @@
 
 Edge::Edge(double price_edge, double price_cloud): price_edge(price_edge), price_cloud(price_cloud) {
 
-};
+}

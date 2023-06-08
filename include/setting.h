@@ -12,9 +12,11 @@
 #define NumOfUser 100 // 用户数量可以指定，但是具体的用户类型信息应该按照分布随机生成
 
 // 定义用户私有信息类型的数量
-#define K 3 // 需要卸载的总的任务量
-#define S 3 // 延迟敏感度类型数量
-#define M 3 // 价格敏感度类型数量
+#define K 2 // 需要卸载的总的任务量
+#define S 2 // 延迟敏感度类型数量
+#define M 2 // 价格敏感度类型数量
+
+#define V 20 // 完成单位任务量得到的收益
 
 
 #endif //CONTRACT_SETTING_H

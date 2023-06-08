@@ -8,8 +8,10 @@
 #include <vector>
 #include <map>
 #include <tuple>
-# include "setting.h"
+#include <string>
+#include "setting.h"
 
+using namespace std;
 
 class ContractItem {
 public:

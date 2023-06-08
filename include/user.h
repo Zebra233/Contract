@@ -11,18 +11,35 @@
 
 class User {
 public:
-    User(double t, double beta, double gamma, Edge edge, ContractItem contractItem);
-    User(double t, double beta, double gamma, Edge edge);
+    User(double t, double beta, double gamma, int t_type, int beta_type, int gamma_type, Edge edge);
     double t;
     double beta;
     double gamma;
-    ContractItem contractItem;
+    int t_type;
+    int beta_type;
+    int gamma_type;
     // 属于哪个 edge
     Edge edge;
+    double MRS;
 
-    double utility(ContractItem contractItem);
+    const double utility(ContractItem contractItem) const;
 
     void chooseContractItem(Contract contract);
+
+    bool operator < (const User &user) const {
+        if (this->t_type < user.t_type) {
+            return true;
+        } else if (this->t_type == user.t_type) {
+            if (this->beta_type < user.beta_type) {
+                return true;
+            } else if (this->beta_type == user.beta_type) {
+                if (this->gamma_type < user.gamma_type) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 };
 
 #endif //CONTRACT_USER_H

@@ -16,7 +16,6 @@ public:
     double price_cloud;
     Contract contract;
 
-    utility();
 };
 
 #endif //CONTRACT_EDGE_H
