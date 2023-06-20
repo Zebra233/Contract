@@ -16,7 +16,10 @@
 #define S 2 // 延迟敏感度类型数量
 #define M 2 // 价格敏感度类型数量
 
-#define V 20 // 完成单位任务量得到的收益
+// 定义 EDGE 成本项系数
+#define CostItemCoefficient 0.6
+
+#define V 10 // 完成单位任务量得到的收益
 
 
 #endif //CONTRACT_SETTING_H

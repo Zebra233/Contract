@@ -11,13 +11,14 @@
 
 class User {
 public:
-    User(double t, double beta, double gamma, int t_type, int beta_type, int gamma_type, Edge edge);
+    User(double t, double beta, double gamma, int t_type, int beta_type, int gamma_type, Edge edge, double distribution);
     double t;
     double beta;
     double gamma;
     int t_type;
     int beta_type;
     int gamma_type;
+    double distribution; // 该用户的分布
     // 属于哪个 edge
     Edge edge;
     double MRS;
@@ -40,6 +41,8 @@ public:
         }
         return false;
     }
+
+    void printUser();
 };
 
 #endif //CONTRACT_USER_H
