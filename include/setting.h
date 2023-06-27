@@ -21,5 +21,4 @@
 
 #define V 10 // 完成单位任务量得到的收益
 
-
 #endif //CONTRACT_SETTING_H
